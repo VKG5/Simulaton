@@ -24,19 +24,7 @@ def _get_velocity_quiver_uvc(velocity: np.ndarray, num_arrows: int = 15):
 def draw_frame(color: np.ndarray, velocity: Optional[np.ndarray] = None, axes=None):
     """
     Draw a single frame of simulation.
-
-    Parameters
-    ----------
-    color
-        A color field. *Shape: [y, x, 3]*.
-    velocity
-        A velocity field. If provided, draws and returns a quiver plot; otherwise,
-        just draws and returns an image. *Shape: [y, x, 2]*.
-    axes
-        If provided, uses these pyplot axes to draw the plots.
-        Otherwise, create a new figure.
     """
-
     if axes is None:
         fig, axes = plt.subplots()
         axes.axis("off")
@@ -57,16 +45,6 @@ def animate_frames(
 ) -> animation.FuncAnimation:
     """
     Draw a stack of frames into a matplotlib animation.
-
-    Parameters
-    ----------
-    color
-        A stack of color field frames. *Shape: [timesteps, y, x, 3]*.
-    velocity
-        A stack of velocity field frames. If provided, draws a quiver plot on each
-        frame. *Shape: [timesteps, y, x, 2]*.
-    interval
-        Milliseconds between consecutive frames of the animation.
     """
 
     fig, ax = plt.subplots()
@@ -99,7 +77,7 @@ def animate_frames(
     )
 
 
-### Video writer
+### Video writer (Modified version)
 # Code modified from kylemcdonald's python-utils
 # (https://github.com/kylemcdonald/python-utils)
 # which is released which is under the MIT license, reproduced below:
