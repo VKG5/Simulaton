@@ -11,6 +11,10 @@ This is the starting point of every simulation
 
 ![](Results/Images/vlcsnap-00001.png) 
 
+The following image represents the velocity vectors from different points in the simulation
+
+![](Results/Images/vlcsnap-00004.png)
+
 ## Mid-Simulation 
 This is the mid-point of the simulation, according to the particular forces acting upon this simulation
 
