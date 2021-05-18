@@ -26,4 +26,5 @@ This is the ending point, namely the 420th frame for our simulation purpose.
 ![](Results/Images/vlcsnap-00003.png) 
 
 You can change the frames from within the Fluid_Sim.ipynb along with other properties like viscosity, frame-rate, resolution **{(720 x 720) in our case}**.
+
 The code is self-explanatory and there are comments in appropriate places for helping readability.
